@@ -82,7 +82,7 @@ const wordArr = [
     "poem"
     ];
 
-/*     //this shows text, art, gif
+    //this shows text, art, gif
     const num = Math.floor(Math.random()*artArr.length);
     text();
     art();
@@ -109,14 +109,14 @@ const wordArr = [
         image.style.width = "700px";
         image.style.border = "1px solid black";
         document.getElementById('images').appendChild(image);
-    } */
+    }
 
 
-    //this prints them all out in a grid
+/*     //this prints them all out in a grid
     for (let i = 0; i < imgArr.length; i++) {
         const image = document.createElement('img');
         image.src = imgArr[i];
         image.style.width = "250px";
         image.style.height = "150px";
-        document.getElementById('images').appendChild(image);
-      }
+        document.getElementById('images').appendChild(image);        
+    } */
