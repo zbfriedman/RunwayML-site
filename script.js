@@ -82,30 +82,41 @@ const wordArr = [
     "poem"
     ];
 
+/*     //this shows text, art, gif
     const num = Math.floor(Math.random()*artArr.length);
-    const word = document.createTextNode(wordArr[num]);
-    document.getElementById('images').style.color = 'white';
-    document.getElementById('images').style.fontSize = '30px';
-    document.getElementById('images').appendChild(word);
-    
-    const art = document.createElement('img');
-    art.src = artArr[num];
-    art.style.margin = "120px";
-    art.style.border = "1px solid black";
-    document.getElementById('images').appendChild(art);
-    console.log(artArr[num])
+    text();
+    art();
+    gif();
 
-    const image = document.createElement('img');
-    image.src = imgArr[num];
-    image.style.width = "700px";
-    image.style.border = "1px solid black";
-    document.getElementById('images').appendChild(image);
+    function text(){
+        const word = document.createTextNode(wordArr[num]);
+        document.getElementById('images').style.color = 'white';
+        document.getElementById('images').style.fontSize = '30px';
+        document.getElementById('images').appendChild(word);
+    }
+    function art(){
+        const art = document.createElement('img');
+        art.src = artArr[num];
+        art.style.margin = "120px";
+        art.style.border = "1px solid black";
+        document.getElementById('images').appendChild(art);
+        console.log(artArr[num])
+    }
 
-/*     //this prints them all out in a grid
+    function gif(){
+        const image = document.createElement('img');
+        image.src = imgArr[num];
+        image.style.width = "700px";
+        image.style.border = "1px solid black";
+        document.getElementById('images').appendChild(image);
+    } */
+
+
+    //this prints them all out in a grid
     for (let i = 0; i < imgArr.length; i++) {
         const image = document.createElement('img');
         image.src = imgArr[i];
         image.style.width = "250px";
         image.style.height = "150px";
         document.getElementById('images').appendChild(image);
-      } */
+      }
