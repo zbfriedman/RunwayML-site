@@ -1,29 +1,29 @@
 const imgArr = [
-    "forest/forestgif.gif",
-    "image/imagegif.gif",
-    "painting/paintinggif.gif",
-    "video/videogif.gif",
-    "sculpture/sculpturegif.gif",
-    "triangle/trianglegif.gif",
-    "eager/eagergif.gif",
-    "tired/tiredgif.gif",
+    "forest/forestgif2.gif",
+    "image/imagegif2.gif",
+    "painting/paintinggif2.gif",
+    "video/videogif2.gif",
+    "sculpture/sculpturegif2.gif",
+    "triangle/trianglegif2.gif",
+    "eager/eagergif2.gif",
+    "tired/tiredgif2.gif",
     "anxious/anxiousgif2.gif",
-    "excited/excitedgif.gif",
-    "happy/happygif.gif",
-    "sad/sadgif.gif",
-    "blob/blobgif.gif",
-    "square/squaregif.gif",
-    "circle/circlegif.gif",
-    "cone/conegif.gif",
-    "cube/cubegif.gif",
-    "aurora/auroragif.gif",
+    "excited/excitedgif2.gif",
+    "happy/happygif2.gif",
+    "sad/sadgif2.gif",
+    "blob/blobgif2.gif",
+    "square/squaregif2.gif",
+    "circle/circlegif2.gif",
+    "cone/conegif2.gif",
+    "cube/cubegif2.gif",
+    "aurora/auroragif2.gif",
     "lake/lakegif2.gif",
-    "mountain/mountaingif.gif",
-    "lightning/lightninggif.gif",
-    "ice/icegif.gif",
-    "geometric/geometricgif.gif",
+    "mountain/mountaingif2.gif",
+    "lightning/lightninggif2.gif",
+    "ice/icegif2.gif",
+    "geometric/geometricgif2.gif",
     "book/bookgif2.gif",
-    "poem/poemgif.gif",
+    "poem/poemgif2.gif",
     ];
 
 const artArr = [
@@ -85,21 +85,21 @@ const wordArr = [
     //this shows text, art, gif
 const num = Math.floor(Math.random()*artArr.length);
 var preHeight = (Math.floor(Math.random() * 300) + 10);
-if (preHeight < 100){preHeight = preHeight + 100;}
+if (preHeight < 150) {preHeight = preHeight + 120;}
 const height = String(preHeight + "px");
 const topp = String((Math.floor(Math.random() * (window.innerHeight - preHeight - 50)) + 10) + "px");
 const leftArt = String((Math.floor(Math.random() * (window.innerWidth/4 - preHeight - 10)) + 10) + "px");
-const leftImage = String((Math.floor(window.innerWidth/3 + Math.random() * 100) + "px"));
+const leftImage = String((Math.floor(window.innerWidth/4 + Math.random() * 100) + "px"));
 let intViewportWidth = window.innerWidth;
-console.log(height);
 
 const art = document.createElement('img');
 art.src = artArr[num];
 art.style.position = 'absolute';
-art.style.top = topp;
-art.style.height = height;
-art.style.left = leftArt;
-art.style.border = "1px solid black";
+art.style.top = "50px";//topp;
+art.style.height = "250px";//height;
+art.style.left = "50px";//leftArt;
+//art.style.border = "1px solid black";
+art.style.boxShadow = "20px 20px 60px rgba(0, 0, 0, 0.9)";
 document.getElementById('images').appendChild(art);
 console.log(artArr[num])
 
@@ -107,9 +107,10 @@ const image = document.createElement('img');
 image.src = imgArr[num];
 image.style.position = 'absolute';
 image.style.top = topp;
-image.style.height = height;
+image.style.height = "275px";//height;
 image.style.left = leftImage;
-image.style.border = "1px solid black";
+//image.style.border = "1px solid black";
+image.style.boxShadow = "20px 20px 60px rgba(0, 0, 0, 0.9)";
 document.getElementById('images').appendChild(image);
 
 // var x = 0;
